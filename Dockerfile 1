@@ -1,7 +1,7 @@
 # 1. Schritt: Bauen der App (Maven ist hier vorinstalliert)
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
-COPY ../../../Downloads .
+COPY ../../Downloads .
 # Hier nutzen wir mvn direkt, da es im Image enthalten ist
 RUN mvn clean package -DskipTests
 
